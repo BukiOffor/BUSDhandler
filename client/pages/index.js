@@ -7,7 +7,7 @@ export default function Home() {
     <NotificationProvider config={{position: 'top-right',isCloseable: true,showTitle: true,showIcon: true,duration: 35,	}}>
 
     <div className="container mx-auto px-4 py-2"> 
-        <div>
+        <div className="gradient">
         <NavBar/>
         <Card></Card>
      </div>
