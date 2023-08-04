@@ -1,0 +1,183 @@
+{
+  "address": "0xe53D8e34CEBD7A31Cab71E35c398629e24440804",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_contractaddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransactionFailed",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TransactionSuccesful",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "name": "proxyTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0xe1b1ab11edf9e2bee6f24c1d23631561c5efd7ab8f4dc727d08fdda7fd503f9d",
+  "receipt": {
+    "to": null,
+    "from": "0x854dEDA681E0efBCaA1c7BF95953799C05D713A2",
+    "contractAddress": "0xe53D8e34CEBD7A31Cab71E35c398629e24440804",
+    "transactionIndex": 13,
+    "gasUsed": "317131",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x28ece52aefbf443940fffc8cea5787add53ebc14a30b622f2b0fe1c89886ddd8",
+    "transactionHash": "0xe1b1ab11edf9e2bee6f24c1d23631561c5efd7ab8f4dc727d08fdda7fd503f9d",
+    "logs": [],
+    "blockNumber": 4015633,
+    "cumulativeGasUsed": "1842978",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x29F636D7cBDd0bDe2Ff13cCec74FcC3aAFEeDAc3"
+  ],
+  "numDeployments": 10,
+  "solcInputHash": "25e445c0e7b2f22323b58dc3293c0fa3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contractaddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"InsufficientBalance\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TransactionFailed\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"TransactionSuccesful\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"}],\"name\":\"proxyTransfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/BUSDHandler.sol\":\"BUSDHandler\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"contracts/BUSDHandler.sol\":{\"content\":\"// SPDX-License-Identifier: SEE LICENSE IN LICENSE\\npragma solidity ^0.8.0;\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\n\\n\\ncontract BUSDHandler {\\n    \\n    error InsufficientBalance();\\n    error TransactionFailed();\\n    event TransactionSuccesful(address indexed sender, address indexed receiver, uint256 indexed amount );\\n    \\n    address owner;\\n    IERC20 busd;\\n\\n    \\n    constructor(address _contractaddress){\\n        busd = IERC20(_contractaddress);\\n        owner = msg.sender;\\n    }\\n\\n\\n    function proxyTransfer(uint value, address receiver) external {\\n        bool success = busd.transferFrom(msg.sender,receiver, value);       \\n        if(success){\\n            emit TransactionSuccesful(msg.sender,receiver,value);\\n        }\\n    }\\n    \\n    function allowance(address _owner, address receiver) external view returns(uint amount) {\\n        amount = busd.allowance(_owner, receiver);\\n    }\\n    \\n\\n    receive()external payable{\\n\\n    }\\n\\n    function withdraw()external{\\n        if(msg.sender == owner){\\n            (bool sent, )=owner.call{value:address(this).balance}(\\\"\\\");\\n            if(!sent){revert TransactionFailed() ;}\\n        }\\n    }\\n\\n    function getBalance()external view returns(uint balance){\\n        balance = busd.balanceOf(msg.sender);\\n    }\\n\\n}\",\"keccak256\":\"0x2a6e2e1440e53b2e0893f0d922dddea5d5ccf759fe1f0609fec13165c717439e\",\"license\":\"SEE LICENSE IN LICENSE\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161048a38038061048a83398101604081905261002f9161005d565b600180546001600160a01b039092166001600160a01b0319928316179055600080549091163317905561008d565b60006020828403121561006f57600080fd5b81516001600160a01b038116811461008657600080fd5b9392505050565b6103ee8061009c6000396000f3fe6080604052600436106100435760003560e01c806312065fe01461004f5780631294d09f146100765780633ccfd60b14610098578063dd62ed3e146100ad57600080fd5b3661004a57005b600080fd5b34801561005b57600080fd5b506100646100cd565b60405190815260200160405180910390f35b34801561008257600080fd5b50610096610091366004610327565b61013f565b005b3480156100a457600080fd5b50610096610203565b3480156100b957600080fd5b506100646100c8366004610353565b61028d565b6001546040516370a0823160e01b81523360048201526000916001600160a01b0316906370a0823190602401602060405180830381865afa158015610116573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013a919061037d565b905090565b6001546040516323b872dd60e01b81523360048201526001600160a01b0383811660248301526044820185905260009216906323b872dd906064016020604051808303816000875af1158015610199573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101bd9190610396565b905080156101fe5760405183906001600160a01b0384169033907f76c0a3f47f00bad4b8e1d16b8f5a5b101764c346cf66d85ff0c3618ce00884ef90600090a45b505050565b6000546001600160a01b0316330361028b57600080546040516001600160a01b039091169047908381818185875af1925050503d8060008114610262576040519150601f19603f3d011682016040523d82523d6000602084013e610267565b606091505b5050905080610289576040516317f2c34560e31b815260040160405180910390fd5b505b565b600154604051636eb1769f60e11b81526001600160a01b0384811660048301528381166024830152600092169063dd62ed3e90604401602060405180830381865afa1580156102e0573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610304919061037d565b9392505050565b80356001600160a01b038116811461032257600080fd5b919050565b6000806040838503121561033a57600080fd5b8235915061034a6020840161030b565b90509250929050565b6000806040838503121561036657600080fd5b61036f8361030b565b915061034a6020840161030b565b60006020828403121561038f57600080fd5b5051919050565b6000602082840312156103a857600080fd5b8151801515811461030457600080fdfea26469706673582212208f3d3fa5c290edf59c900e249405dee7d7c8241a63eb0544c630d8431fc0e24364736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600436106100435760003560e01c806312065fe01461004f5780631294d09f146100765780633ccfd60b14610098578063dd62ed3e146100ad57600080fd5b3661004a57005b600080fd5b34801561005b57600080fd5b506100646100cd565b60405190815260200160405180910390f35b34801561008257600080fd5b50610096610091366004610327565b61013f565b005b3480156100a457600080fd5b50610096610203565b3480156100b957600080fd5b506100646100c8366004610353565b61028d565b6001546040516370a0823160e01b81523360048201526000916001600160a01b0316906370a0823190602401602060405180830381865afa158015610116573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061013a919061037d565b905090565b6001546040516323b872dd60e01b81523360048201526001600160a01b0383811660248301526044820185905260009216906323b872dd906064016020604051808303816000875af1158015610199573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101bd9190610396565b905080156101fe5760405183906001600160a01b0384169033907f76c0a3f47f00bad4b8e1d16b8f5a5b101764c346cf66d85ff0c3618ce00884ef90600090a45b505050565b6000546001600160a01b0316330361028b57600080546040516001600160a01b039091169047908381818185875af1925050503d8060008114610262576040519150601f19603f3d011682016040523d82523d6000602084013e610267565b606091505b5050905080610289576040516317f2c34560e31b815260040160405180910390fd5b505b565b600154604051636eb1769f60e11b81526001600160a01b0384811660048301528381166024830152600092169063dd62ed3e90604401602060405180830381865afa1580156102e0573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610304919061037d565b9392505050565b80356001600160a01b038116811461032257600080fd5b919050565b6000806040838503121561033a57600080fd5b8235915061034a6020840161030b565b90509250929050565b6000806040838503121561036657600080fd5b61036f8361030b565b915061034a6020840161030b565b60006020828403121561038f57600080fd5b5051919050565b6000602082840312156103a857600080fd5b8151801515811461030457600080fdfea26469706673582212208f3d3fa5c290edf59c900e249405dee7d7c8241a63eb0544c630d8431fc0e24364736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 94,
+        "contract": "contracts/BUSDHandler.sol:BUSDHandler",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 97,
+        "contract": "contracts/BUSDHandler.sol:BUSDHandler",
+        "label": "busd",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(IERC20)77"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(IERC20)77": {
+        "encoding": "inplace",
+        "label": "contract IERC20",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}
